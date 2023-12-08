@@ -39,60 +39,61 @@ class Keys extends Component {
        <div className='display'> <Displayy expression={this.state.expression} /></div>
 
         <div className="row1">
-          <button onClick={this.handleClickAC}>AC</button>
-          <button onClick={this.handleClickDelete}>DEL</button>
-          <button onClick={(e) => this.handleClickBtn(e)} value="+">
+          <button className='white long1' onClick={this.handleClickAC}>AC</button>
+          <button className='white' onClick={this.handleClickDelete}>DEL</button>
+          <button className='yellow' onClick={(e) => this.handleClickBtn(e)} value="+">
             +
           </button>
         </div>
         <div className="row4">
-          <button onClick={(e) => this.handleClickBtn(e)} value={7}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={7}>
             7
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value={8}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={8}>
             8
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value={9}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={9}>
             9
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value="-">
+          <button className='yellow' onClick={(e) => this.handleClickBtn(e)} value="-">
             -
           </button>
         </div>
         <div className="row3">
-          <button onClick={(e) => this.handleClickBtn(e)} value={4}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={4}>
             4
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value={5}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={5}>
             5
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value={6}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={6}>
             6
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value="/">
+          <button className='yellow' onClick={(e) => this.handleClickBtn(e)} value="/">
             /
           </button>
         </div>
         <div className="row2">
-          <button onClick={(e) => this.handleClickBtn(e)} value={1}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={1}>
             1
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value={2}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={2}>
             2
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value={3}>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value={3}>
             3
           </button>
-          <button onClick={(e) => this.handleClickBtn(e)} value="*">
+          <button className='yellow' onClick={(e) => this.handleClickBtn(e)} value="*">
             *
           </button>
         </div>
         
         <div className="row5">
-          <button onClick={(e) => this.handleClickBtn(e)} value={0}>
+          <button className='grey long1' onClick={(e) => this.handleClickBtn(e)} value={0}>
             0
           </button>
-          <button onClick={this.handleCalculate}>=</button>
+          <button className='grey' onClick={(e) => this.handleClickBtn(e)} value=".">.</button>
+          <button className='yellow' onClick={this.handleCalculate}>=</button>
         </div>
       </div>
     );
